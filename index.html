@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home | My Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <h1 class="logo">MyPortfolio</h1>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">YourName<span>.</span></div>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <header class="hero">
-    <h2>Hello, I'm <span>Your Name</span></h2>
-    <p>Software Developer • Designer • Problem Solver</p>
-    <a href="about.html" class="btn">Learn More</a>
-  </header>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="fade-in">Hi, I'm <span>Your Name</span></h1>
+      <h2 class="slide-up">Creative Developer & Designer</h2>
+
+      <p class="fade-in-delayed">
+        I build beautiful, high-performing digital experiences that connect ideas
+        with execution.
+      </p>
+
+      <a href="#" class="btn">Explore My Work</a>
+    </div>
+
+    <div class="hero-art">
+      <div class="glow-circle"></div>
+      <div class="floating-card">✨</div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
