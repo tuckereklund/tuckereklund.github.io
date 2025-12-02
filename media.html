@@ -7,44 +7,60 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Tucker Eklund<span>.</span></div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="media.html">Media</a></li>
+      <li><a href="media.html" class="active">Media</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <section class="media-section">
-    <h1>Media</h1>
-    <p>Photos, videos, and documents showcasing my work.</p>
+  <section class="page media-page">
+    <div class="section-header">
+      <h1 class="reveal">Media</h1>
+      <p class="reveal">
+        A mix of photos, videos, and documents that highlight my work and style.
+      </p>
+    </div>
 
     <div class="media-grid">
+      <!-- IMAGE -->
+      <div class="media-card reveal">
+        <img src="images/photo1.jpg" alt="Project Photo 1" />
+      </div>
 
       <!-- IMAGE -->
-      <div class="media-card">
-        <img src="images/photo1.jpg" alt="Project Photo" />
+      <div class="media-card reveal">
+        <img src="images/photo2.jpg" alt="Project Photo 2" />
       </div>
 
       <!-- VIDEO -->
-      <div class="media-card">
+      <div class="media-card reveal">
         <video controls>
           <source src="videos/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
       </div>
 
       <!-- PDF -->
-      <div class="media-card pdf-card">
-        <iframe src="docs/resume.pdf"></iframe>
+      <div class="media-card pdf-card reveal">
+        <iframe src="docs/resume.pdf" title="Resume PDF"></iframe>
       </div>
 
+      <!-- Another PDF or media item -->
+      <div class="media-card pdf-card reveal">
+        <iframe src="docs/case-study.pdf" title="Case Study PDF"></iframe>
+      </div>
     </div>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
