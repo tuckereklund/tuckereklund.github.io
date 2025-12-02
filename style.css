@@ -1,0 +1,164 @@
+/* IMPORT MODERN FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00eaff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #bbb;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00eaff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 180px 60px 0;
+  min-height: 100vh;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+}
+
+.hero-text h1 span {
+  color: #00eaff;
+}
+
+.hero-text h2 {
+  font-weight: 300;
+  margin: 10px 0 25px;
+  font-size: 2rem;
+  color: #ccc;
+}
+
+.hero-text p {
+  color: #aaa;
+  max-width: 500px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 28px;
+  border-radius: 6px;
+  background: #00eaff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #00c0d4;
+}
+
+/* HERO ART */
+.hero-art {
+  position: relative;
+  width: 450px;
+  height: 450px;
+}
+
+.glow-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,234,255,0.4), transparent 60%);
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* FLOATING CARD */
+.floating-card {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 3rem;
+  animation: float 3.5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  animation: fade 1.4s forwards;
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fade 1.4s forwards 0.4s;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideup 1.2s forwards 0.2s;
+}
+
+@keyframes fade {
+  to { opacity: 1; }
+}
+
+@keyframes slideup {
+  to { opacity: 1; transform: translateY(0); }
+}
