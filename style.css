@@ -219,7 +219,7 @@ body {
 
 /* GENERIC PAGE LAYOUT */
 .page {
-  padding: 150px 60px 60px;
+  padding: 200px 60px 60px;
   min-height: 100vh;
 }
 
@@ -244,11 +244,16 @@ body {
   gap: 40px;
 }
 
-.about-text p {
-  color: #aaa;
-  line-height: 1.7;
-  margin-bottom: 18px;
+.about-page .section-header {
+  margin-bottom: 60px;
 }
+
+.about-text p {
+  margin-bottom: 22px;
+  line-height: 1.85;
+}
+
+
 
 .about-card {
   background: #111;
@@ -495,4 +500,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+h1, h2, h3 {
+  margin-bottom: 18px;
 }
