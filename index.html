@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Tucker Eklund | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- NAVIGATION -->
   <nav class="navbar">
     <div class="logo">Tucker Eklund<span>.</span></div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -22,13 +26,19 @@
   <section class="hero">
     <div class="hero-text">
       <h1 class="fade-in">Hi, I'm <span>Tucker</span></h1>
-      <h2 class="slide-up">Test Message and Test Message</h2>
+      <h2 class="slide-up">Developer • Designer • Problem Solver</h2>
 
       <p class="fade-in-delayed">
-        The quick brown fox jumps over the lazy dog. 
+        I enjoy building clean, modern digital experiences and bringing ideas to life
+        through code, design, and storytelling.
       </p>
 
-      <a href="#" class="btn">Explore My Work</a>
+      <div class="hero-buttons fade-in-delayed">
+        <a href="projects.html" class="btn">View My Projects</a>
+        <a href="docs/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+          View Résumé
+        </a>
+      </div>
     </div>
 
     <div class="hero-art">
